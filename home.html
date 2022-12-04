@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <script src="res.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"></link>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Pacifico|Nerko One|Kalam">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  </head>
+
+<title>HOME</title>
+
+<body>
+  <header>
+    <div class="head" >
+      <div id="header-left" style="float: left; margin-left: 20px;">
+        <a href="home.html"><img src="css/img/Smile.png" class="logo" style="width: 20%; height: 20%; border-radius: 15px"></a>
+      </div>
+        <div id="header-right" style="float: right; margin-right: 20px; ">
+          <a href="#home" class="links" >Home</a>
+          <a href="#about" class="links" >About Us</a>
+          <a href="#events" class="links" >Events</a>
+          <button onclick="formPop('signupPopForm')" >Signup</button>
+          <button onclick="formPop('loginForm')" >Login</button>
+          <div id="signupPopForm">
+            <form method="GET" action="/signupSubmit" align="center">
+              <label for="fname"><b>First Name</b></label><br>
+              <input type="text" placeholder="Enter First Name" name="fname" required><br>
+              <label for="lname"><b>Last Name</b></label><br>
+              <input type="text" placeholder="Enter Last Name" name="lname" required><br>
+              <label for="phone"><b>Mobile Number</b></label><br>
+              <input type="phone number" placeholder="Enter Phone Number" name="phone" required><br>
+              <label for="email"><b>Email</b></label><br>
+              <input type="text" placeholder="Enter Email" name="email" required><br>
+              <label for="psw"><b>Password</b></label><br>
+              <input type="password" placeholder="Enter Password" name="psw" required><br>
+              <label for="psw-repeat"><b>Repeat Password</b></label><br>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br><br>
+              <button type="submit" style="color: black;">Signup</button>
+              <button type="submit" style="color: black;" onclick="closeForm('signupPopForm')">Close</button>
+            </form>
+          </div>
+          <div id="loginForm">
+            <form method="GET" action="/loginSubmit" align="center">
+              <label for="userid"><b>User Id</b></label><br>
+              <input type="email" placeholder="Enter User Id" name="email" required><br>
+              <label for="psw"><b>Password</b></label><br>
+              <input type="password" placeholder="Enter Password" name="psw" required><br>
+              <button type="submit" style="color: black;">Login</button>
+              <button type="submit" style="color: black;" onclick="closeForm('loginForm')">Close</button>
+            </form>
+          </div>
+        </div>
+        <script>
+    function formPop(formId){
+      if(document.getElementById(formId).style.display == "block"){
+        document.getElementById(formId).style.display = "none";
+      }
+      else{
+        document.getElementById(formId).style.display = "block";
+      }
+    }
+  function closeForm(formId) {
+    document.getElementById(formId).style.display = "none";
+  }
+  </script>
+    </div>
+  </header>
+  <div class="img-slideshow" id="home"></div>
+
+  <!--About Section-->
+  <div id="about" style="width: 100%; height: 100%; margin-top: 20px;">
+    <div style="width: 50%; height: auto; float:left;height: 500px;">
+      <h2 align="center" style="color: whitesmoke; font-family: 'Pacifico', sans-serif; font-size: 80px;">About Us</h2>
+      <p style=" font-size: 22px; font-weight: 600; font-family: 'Kalam', sans-serif; color: whitesmoke;" align="center">We provide all varieties of food national and international.We specialize in making notheren food with classic southeren touch.The food and the vibe is all what made us stand out today. 
+        Here,ancient customs and future trends coexist,and the intricacies of western culture blend seamlessly together over the asian culture.
+        <i><b>YUMMIES</b></i> reflects the depth,richness,and vibrancy of Asia's diverse culinary traditions in a modern,fast-casual settings.</p>
+   </div>
+   
+   <div style="width: 50%; height: auto; float:right; display: flex; justify-content: center;">
+    <img src="css/img/about-pic.jpeg" align="center"style="border-radius: 10px; height: 500px;">
+   </div>
+  </div>
+    
+    
+  <!--Events-->
+
+
+  <div id="events" >
+    <h1 style="color: white; font-family: 'Pacifico', sans-serif; font-size: 80px;" align="center">Events</h1>
+    <div class="main1">
+      <ul>
+        <li>
+          <div class="slidetitle"> 
+            <span>This Saturday<br>Standup comedy by AAkash Gupta</span>
+          </div>
+          <a href='#'>
+            <img src="https://i.ytimg.com/vi/Y2Oj9gllHno/maxresdefault.jpg"/>
+          </a>
+        </li>
+        <li>
+          <div class="slidetitle">
+            <span>This Sunday<br>Musical night by Anahatha</span>
+          </div>
+          <a href='#'>
+            <img src="https://images.newindianexpress.com/uploads/user/imagelibrary/2022/4/14/w900X450/New_Project_34.jpg?w=400&dpr=2.6"/>
+          </a>
+        </li>
+        <li>
+          <div class="slidetitle"> 
+            <span>
+              Up Coming -Wine and Whiskey Night
+            </span>
+          </div>
+          <a href='#'>
+            <img src="https://media.istockphoto.com/id/844813216/photo/tasting-images.jpg?b=1&s=170667a&w=0&k=20&c=i1RuMyr_6Q8DKQHBqAPW3jWXO3zxVPEac_0szuxxy_U="/>
+          </a>
+        </li>
+        <li>
+          <div class="slidetitle"> 
+            <span>Up Coming -Photo Booth</span>
+          </div>
+          <a href='#'>
+            <img src="https://cdn0.weddingwire.in/vendor/6147/3_2/960/jpeg/photobooth-swift-rent-photobooth-setup-2_15_276147-158753963330307.jpeg"/>
+          </a>
+        </li>
+        <li>
+          <div class="slidetitle"> 
+            <span>Up Coming -Welcome Santa</span>
+          </div>
+          <a href='#'>
+            <img src="https://i.insider.com/5fda27a16524f10019792559?width=1000&format=jpeg&auto=webp"/>
+          </a>
+        </li>
+      </ul>
+      </div>
+        
+  </div>
+
+
+  <!--Booking section-->
+
+  
+
+  <div id="book">
+    <h3 align="center" style="color: whitesmoke; font-family: 'Pacifico', sans-serif; font-size: 80px;">Book your table here!</h3>
+    <div id="booking_form" align="center">
+      <div class="form-style-8">
+        <h2>select your booking details</h2>
+          <form id="booking" method="GET" action="/Bookingsubmit">
+            <input type="number" name="people" placeholder="No of Guests" />
+            <input type="date" name="Date" placeholder="Date" />
+            <input type="time" id="appt" min="09:00" max="18:00" name="Time" placeholder="Slots - Open from 11am to 8pm" required/>
+            <button type = "submit" onclick="bookingCategory()">Submit</button>
+          </form>
+          <script>
+            function bookingCategory(){
+              alert("Select Your booking Category below!");}
+          </script>
+      </div>
+    </div>
+</div>
+
+
+<!--Booking Category-->
+  <div id="bookingCategory" style="width: 100%; height: auto;"align="center">
+    <h3 style="color: whitesmoke; font-family: 'Pacifico', sans-serif; font-size: 60px;">Booking Category</h3>
+    <button onclick="formPop('casualHangout')" style="width: 50%;height: 20px; float: left; font-size: 30px; font-weight: 600; font-family: 'Kalam', sans-serif;color: whitesmoke; " align="center">Casual Hangout</button>
+    <button onclick="formPop('special')" style="width: 50%; height:20px; float: right;font-size: 30px; font-weight: 600; font-family: 'Kalam', sans-serif; color: whitesmoke; " align="center">Special Event</button>
+    <!--Casual Hangout-->
+    
+
+
+    <div id="casualHangout">
+      <div class="form-style-8">
+        <h2>Casual Hangout</h2>
+          <form id="hangout" method="GET" action="/CasualHandoutsubmit">
+            <input type="text" name="fname" placeholder="Name" />
+            <input type="phonenumber" name="mobile" placeholder="Phone Number" />
+            <input type="email" name="email" placeholder="Email Address" />
+            <h3>Payment:</h3>
+            <img src="https://play-lh.googleusercontent.com/ufwUy4SGVTqCs8fcp6Ajxfpae0bNImN1Rq2cXUjWI7jlmNMCsXgQE5C3yUEzBu5Gadkz=w240-h480-rw"><br>
+            <input type="submit" value="Submit" onclick="confirmTicket()">
+          </form>
+      </div>
+    </div>
+    <!--Special Event-->
+    <div id="special">
+      <div class="form-style-8">
+        <h2>Special Bookings</h2><br>
+          <form id="splBooking" method = "GET" action = "/SpecialEventsubmit">
+            <input type ="radio" name="eventName" value="Wedding Anniversary">Wedding Anniversary
+            <input type ="radio" name="eventName" value ="Date Night">Date Night
+            <input type ="radio" name="eventName" value="Birth Day">Birth Day
+            <input type ="radio" name="eventName" value="Proposal">Proposal
+            <input type ="radio" name="eventName" value="Office party">Office party
+            <input type ="radio" name="eventName" value="Others">Others <br>
+            <input type="text" placeholder ="Description" name="Description" ><br>
+            <input type="submit" value="Submit" onclick="myFunction()">
+          </form>
+    </div>
+    <script type="text/javascript">
+      function adjust_textarea(h) {
+          h.style.height = "20px";
+          h.style.height = (h.scrollHeight)+"px";
+      }
+      function confirmTicket(){
+        alert("Your booking has been confirmed. Hope you enjoy your visit 😀 !!  ");
+      }
+      </script>      
+  </div>
+
+  <script>
+    function formPop(formId){
+      if(document.getElementById(formId).style.display == "block"){
+        document.getElementById(formId).style.display = "none";
+      }
+      else{
+        document.getElementById(formId).style.display = "block";
+      }
+    }
+  function closeForm(formId) {
+    document.getElementById(formId).style.display = "none";
+  }
+  </script>
+<!--Footer-->
+
+<footer style="margin-top: 30px;">
+  <div id="foot" >
+    <a href="https://youtube.com/"><img src="/css/img/youtube.jpeg"></a>
+    <a href="https://www.instagram.com/"><img src="/css/img/instagram.jpeg"></a>
+    <a href="https://www.facebook.com/"><img src="/css/img/facebook.jpeg"></a>
+    <a href="https://twitter.com/"><img src="/css/img/twitter.jpeg"></a>
+    <h4 style="color: whitesmoke; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">&copy; Copyright 2022 YUMMIES</h4>
+  </div>
+
+</footer>
+
+
+</body>
+
+</html>
